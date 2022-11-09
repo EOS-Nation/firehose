@@ -27,4 +27,4 @@ replace github.com/census-instrumentation/opencensus-proto v0.1.0-0.201812141439
 
 replace github.com/streamingfast/dauth => github.com/EOS-Nation/dauth v0.0.0-20221005084741-e79ebf7b78e8
 
-replace github.com/streamingfast/dgrpc => github.com/EOS-Nation/dgrpc v0.0.0-20221108114110-11d55ce0db5d
+replace github.com/streamingfast/dgrpc => github.com/EOS-Nation/dgrpc v0.0.0-20221108170744-d0c2d8abe98f
