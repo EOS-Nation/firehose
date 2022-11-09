@@ -122,7 +122,7 @@ func NewServer(
 		dgrpc.WithLogger(logger),
 		dgrpc.WithHealthCheck(dgrpc.HealthCheckOverGRPC|dgrpc.HealthCheckOverHTTP, createHealthCheck(isReady)),
 		dgrpc.WithAuthChecker(authenticator.Check, authenticator.GetAuthTokenRequirement() == dauth.AuthTokenRequired),
-		dgrpc.WithGrpcServerOption(grpc.MaxRecvMsgSize(32 * 1024 * 1024)),
+		dgrpc.WithGrpcServerOption(grpc.MaxRecvMsgSize(100 * 1024 * 1024)),
 	}
 
 	if strings.Contains(listenAddr, "*") {
